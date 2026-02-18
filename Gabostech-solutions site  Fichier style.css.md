@@ -1,0 +1,108 @@
+# Gabostech-solutions site : Fichier style.css  
+  
+:root {  
+    --primary: #003399; /* Bleu Européen */  
+    --accent: #FFD700; /* Or */  
+    --dark: #0a0a0a;  
+    --light: #f4f4f4;  
+    --glass: rgba(255, 255, 255, 0.1);  
+}  
+  
+* { margin: 0; padding: 0; box-sizing: border-box; }  
+  
+body {  
+    font-family: 'Inter', sans-serif;  
+    background-color: var(--dark);  
+    color: white;  
+    line-height: 1.6;  
+}  
+  
+nav {  
+    display: flex;  
+    justify-content: space-between;  
+    padding: 2rem 5%;  
+    align-items: center;  
+}  
+  
+.logo { font-size: 1.8rem; font-weight: bold; letter-spacing: -1px; }  
+.logo span { color: var(--primary); }  
+  
+nav ul { display: flex; list-style: none; }  
+nav ul li { margin-left: 2rem; }  
+nav a { text-decoration: none; color: white; transition: 0.3s; }  
+nav a:hover { color: var(--primary); }  
+  
+.hero {  
+    height: 80vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    background: radial-gradient(circle at center, #001a4d 0%, #0a0a0a 100%);  
+}  
+  
+.hero h1 { font-size: 4rem; margin-bottom: 1.5rem; }  
+.hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.8; }  
+  
+.cta-main {  
+    background: var(--primary);  
+    color: white;  
+    padding: 1rem 2rem;  
+    border-radius: 50px;  
+    text-decoration: none;  
+    font-weight: bold;  
+    box-shadow: 0 10px 20px rgba(0, 51, 153, 0.3);  
+}  
+  
+.products-grid { padding: 5rem 5%; }  
+.section-title { text-align: center; margin-bottom: 4rem; font-size: 2.5rem; }  
+  
+.container {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+    gap: 2rem;  
+}  
+  
+.card {  
+    background: var(--glass);  
+    padding: 2.5rem;  
+    border-radius: 20px;  
+    border: 1px solid rgba(255, 255, 255, 0.1);  
+    transition: 0.4s;  
+    position: relative;  
+    display: flex;  
+    flex-direction: column;  
+}  
+  
+.card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.15); }  
+  
+.badge {  
+    position: absolute;  
+    top: 10px;  
+    right: 10px;  
+    background: var(--accent);  
+    color: black;  
+    padding: 0.3rem 0.8rem;  
+    font-size: 0.7rem;  
+    font-weight: bold;  
+    border-radius: 5px;  
+}  
+  
+.card h3 { margin-bottom: 1rem; color: var(--accent); }  
+.card p { font-size: 0.95rem; opacity: 0.8; margin-bottom: 2rem; flex-grow: 1; }  
+.price { font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem; display: block; }  
+  
+.btn-buy {  
+    background: white;  
+    color: black;  
+    border: none;  
+    padding: 0.8rem;  
+    border-radius: 10px;  
+    font-weight: bold;  
+    cursor: pointer;  
+    transition: 0.3s;  
+}  
+  
+.btn-buy:hover { background: var(--primary); color: white; }  
+  
+footer { text-align: center; padding: 3rem; opacity: 0.5; font-size: 0.8rem; }  
