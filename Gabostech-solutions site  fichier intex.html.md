@@ -1,4 +1,4 @@
-# Gabostech-solutions site : fichier intex.html  
+index.html  
   
 - <!DOCTYPE html>  
 - <html lang="fr">  
