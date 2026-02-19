@@ -1,5 +1,3 @@
-# Gabostech-solutions site : Fichier script.js  
-  
 function buyProduct(productName) {  
     alert("Félicitations ! Vous allez être redirigé vers notre plateforme de paiement sécurisée pour le produit : " + productName);  
     // Ici, vous remplacerez plus tard par vos liens Lemon Squeezy ou Gumroad  
